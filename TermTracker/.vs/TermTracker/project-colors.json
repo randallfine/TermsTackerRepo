@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e1776e1e-0912-4988-8502-476a7c4f455c": {
+      "ProjectGuid": "e1776e1e-0912-4988-8502-476a7c4f455c",
+      "DisplayName": "TermTracker",
+      "ColorIndex": 0
+    },
+    "83c4aea9-4aa4-496b-b81e-ae2c88c1ab0f": {
+      "ProjectGuid": "83c4aea9-4aa4-496b-b81e-ae2c88c1ab0f",
+      "DisplayName": "TermTracker.Android",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
