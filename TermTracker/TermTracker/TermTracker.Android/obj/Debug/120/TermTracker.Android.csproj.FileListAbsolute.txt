@@ -635,3 +635,8 @@ C:\Users\randa\source\repos\TermTrackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermTrackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\randa\source\repos\TermTrackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\randa\source\repos\TermTrackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\android\assets\Mono.Android.dll
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\build.props
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\adb.props
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\120\TermTracker.Android.csproj.AssemblyReference.cache

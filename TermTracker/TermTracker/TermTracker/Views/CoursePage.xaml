@@ -22,22 +22,17 @@
                     <Label x:Name="StartDateLabel" HorizontalOptions="Center" TextColor="White"/>
                     <Label Text="-" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
                     <Label x:Name="EndDateLabel" HorizontalOptions="Center" TextColor="White"/>
-                </StackLayout>
-                <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Label Text="Course Status" FontSize="Medium"/>
-                    <Label x:Name="StausLabel"/>
-                </StackLayout>
-                <StackLayout>
+                </StackLayout> 
+                <Label x:Name="StausLabel"/>
                 <Label x:Name="instrunctorNameLabel" />
-                    <Label x:Name="instrunctorPhoneLabel" />
-                    <Label x:Name="instrunctorEmailLabel" />
-                    <Label x:Name="notesLabel" HeightRequest="100"/>
-                </StackLayout>
+                <Label x:Name="instrunctorPhoneLabel" />
+                <Label x:Name="instrunctorEmailLabel" />
+                <Label x:Name="notesLabel" HeightRequest="100"/>
             </StackLayout>
             <BoxView Grid.Row="3" Grid.ColumnSpan="3" BackgroundColor="#4986ad" VerticalOptions="EndAndExpand"/>
             <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
                 <Button x:Name="BtnAddAssessment" Text="Add Assessment" TextColor="White" BackgroundColor="Transparent" Clicked="BtnAddAssessment_Clicked"/>
-                <Button x:Name="BtnEditTerm" Text="Edit Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnEditTerm_Clicked"/>
+                <Button x:Name="BtnCourseTerm" Text="Edit Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnEditCourse_Clicked"/>
                 <Button x:Name="BtnDelete" Text="Drop Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnDelete_Clicked"/>
             </StackLayout>
         </Grid>

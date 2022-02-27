@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using Plugin.LocalNotifications;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,8 @@ namespace TermTracker.Views
                 instrunctorEmailLabel.Text = courseRow.InstructorEmail;
                 instrunctorPhoneLabel.Text = courseRow.InstructorPhone;
                 notesLabel.Text = courseRow.Notes;
+                CrossLocalNotifications.Current.Show(courseRow.CourseTitle, $"This course will start on {courseRow.StartDate }", 101, DateTime.Parse(courseRow.StartDate));
+                CrossLocalNotifications.Current.Show(courseRow.CourseTitle, $"This course will end on {courseRow.EndDate }", 101, DateTime.Parse(courseRow.EndDate));
             }
         }
 
@@ -44,14 +47,24 @@ namespace TermTracker.Views
 
         }
 
-        private void BtnEditTerm_Clicked(object sender, EventArgs e)
+        private void BtnEditCourse_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new EditCourse(CourseId));
         }
 
         private void BtnDelete_Clicked(object sender, EventArgs e)
         {
-
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                var row = con.Table<Course_DB>().Where(c => c.CourseId.Equals(CourseId)).FirstOrDefault();
+                {
+                    if (row != null)
+                    {
+                        var deleted = con.Delete<Course_DB>(CourseId);
+                    }
+                }
+            }
+            Navigation.PopAsync();
         }
     }
 }

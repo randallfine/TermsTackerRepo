@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermTracker.Android", "TermTracker\TermTracker.Android\TermTracker.Android.csproj", "{83C4AEA9-4AA4-496B-B81E-AE2C88C1AB0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermTracker", "TermTracker\TermTracker\TermTracker.csproj", "{E1776E1E-0912-4988-8502-476A7C4F455C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TermTracker", "TermTracker\TermTracker\TermTracker.csproj", "{E1776E1E-0912-4988-8502-476A7C4F455C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -25,14 +25,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid12.0"
+          "monoandroid11.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid12.0": {
+          "monoandroid11.0": {
             "projectReferences": {
               "C:\\Users\\randa\\source\\repos\\TermsTackerRepo\\TermTracker\\TermTracker\\TermTracker\\TermTracker.csproj": {
                 "projectPath": "C:\\Users\\randa\\source\\repos\\TermsTackerRepo\\TermTracker\\TermTracker\\TermTracker\\TermTracker.csproj"
@@ -42,15 +42,19 @@
         }
       },
       "frameworks": {
-        "monoandroid12.0": {
+        "monoandroid11.0": {
           "dependencies": {
+            "Xam.Plugins.Notifier": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2291, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -109,13 +113,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xam.Plugins.Notifier": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2291, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
