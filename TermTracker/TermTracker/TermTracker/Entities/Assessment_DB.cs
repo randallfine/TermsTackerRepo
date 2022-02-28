@@ -12,7 +12,6 @@ namespace TermTracker.Entities
         public int AssessmentId { get; set; }
         public string AssessmentName { get; set; }
         public string AssessmentType { get; set; }
-        public string StartDate { get; set; }
         public string EndDate { get; set; }
 
     }
