@@ -1,4 +1,5 @@
-﻿using Plugin.LocalNotifications;
+﻿//using Plugin.LocalNotifications;
+using Plugin.LocalNotifications;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,7 @@ namespace TermTracker.Views
 
         private void BtnAddAssessment_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new AddAssesment(CourseId));
         }
 
         private void BtnEditCourse_Clicked(object sender, EventArgs e)

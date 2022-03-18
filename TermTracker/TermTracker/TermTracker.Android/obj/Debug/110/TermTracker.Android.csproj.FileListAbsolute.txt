@@ -1,3 +1,7 @@
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\build.props
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\adb.props
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\TermTracker.Android.csproj.AssemblyReference.cache
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.Android.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.Android.pdb
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker.apk
@@ -7,10 +11,6 @@ C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.apk.idsig
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.pdb
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\build.props
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\adb.props
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\TermTracker.Android.csproj.AssemblyReference.cache
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\res.flag
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_AndroidXJetifyEmbeddedFiles.stamp
@@ -244,7 +244,9 @@ C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\assets\Xamarin.Google.Android.Material.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\assets\Xamarin.Google.Android.Material.pdb
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\androidx\jl\b9e4371f-1772-47fe-aad7-4cfd91ac611f.jar
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_AndroidXJetifyJavaLibraryRules.stamp
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\androidx\proguard\7057e36b-4dc2-4c6b-8783-e32d523f8004.cfg
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_AndroidXJetifyProguardRules.stamp
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\androidx\_AndroidXJetifyProguardRules.jetify
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_AndroidXCecilfy.stamp
@@ -516,6 +518,7 @@ C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\BatteryBroadcastReceiver.java
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\ClipboardChangeListener.java
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\ConnectivityBroadcastReceiver.java
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\Connectivity_EssentialsNetworkCallback.java
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\EnergySaverBroadcastReceiver.java
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\GyroscopeListener.java
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\IntermediateActivity.java
@@ -650,5 +653,3 @@ C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\androidx\jl\daf209a0-9506-40c4-b566-bbd9371ee5b0.jar
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\androidx\proguard\fba71d3e-a84d-4c09-83d9-d1876158da94.cfg

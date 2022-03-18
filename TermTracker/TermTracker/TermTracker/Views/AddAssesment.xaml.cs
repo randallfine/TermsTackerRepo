@@ -12,8 +12,10 @@ namespace TermTracker.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddAssesment : ContentPage
     {
-        public AddAssesment()
+        private readonly int CourseId;
+        public AddAssesment(int courseId)
         {
+            CourseId = courseId;
             InitializeComponent();
         }
     }
