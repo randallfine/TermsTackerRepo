@@ -10,6 +10,7 @@ namespace TermTracker.Entities
     {
         [PrimaryKey, AutoIncrement]
         public int AssessmentId { get; set; }
+        public int CourseId { get; set; }
         public string AssessmentName { get; set; }
         public string AssessmentType { get; set; }
         public string EndDate { get; set; }

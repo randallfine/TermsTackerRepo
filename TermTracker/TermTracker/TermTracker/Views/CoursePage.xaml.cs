@@ -1,5 +1,4 @@
-﻿//using Plugin.LocalNotifications;
-using Plugin.LocalNotifications;
+﻿using Plugin.LocalNotifications;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -28,6 +27,7 @@ namespace TermTracker.Views
             using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
             {
                 con.CreateTable<Course_DB>();
+                con.CreateTable<Assessment_DB>();
                 var courseRow = con.Table<Course_DB>().Where(c => c.CourseId.Equals(CourseId)).FirstOrDefault();
 
                 courseTitleLabel.Text = courseRow.CourseTitle;
@@ -40,6 +40,10 @@ namespace TermTracker.Views
                 notesLabel.Text = courseRow.Notes;
                 CrossLocalNotifications.Current.Show(courseRow.CourseTitle, $"This course will start on {courseRow.StartDate }", 101, DateTime.Parse(courseRow.StartDate));
                 CrossLocalNotifications.Current.Show(courseRow.CourseTitle, $"This course will end on {courseRow.EndDate }", 101, DateTime.Parse(courseRow.EndDate));
+
+                var assesments = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(CourseId)).ToList();
+
+                AssesmentListView.ItemsSource = assesments;
             }
         }
 
@@ -66,6 +70,11 @@ namespace TermTracker.Views
                 }
             }
             Navigation.PopAsync();
+        }
+
+        private void assesmentStackLayout_Tapped(object sender, EventArgs e)
+        {
+
         }
     }
 }

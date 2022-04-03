@@ -18,6 +18,9 @@
                 <Label Text="End Date"/>
                 <DatePicker x:Name="EndDatePicker"/>
             </StackLayout>
+            <Button Text="Save"
+                    x:Name="BtnSave"
+                    Clicked="BtnSave_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
