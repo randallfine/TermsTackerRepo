@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using Plugin.LocalNotifications;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TermTracker.Entities;
 using Xamarin.Forms;
+using TermTracker.HelperClasses;
 
 namespace TermTracker
 {
@@ -26,10 +28,15 @@ namespace TermTracker
         {
             base.OnAppearing();
 
+            NotificationHelpers.AddAllNotifications();
+
             using(SQLiteConnection con = new SQLiteConnection(App.FilePath))
             {
                 con.CreateTable<Term_DB>();
+               
+
                 var terms = con.Table<Term_DB>().ToList();
+               
 
                 termListView.ItemsSource = terms;
             }

@@ -11,6 +11,11 @@
                 <Label Text="End Date"/>
                 <DatePicker x:Name="EndDatePicker"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="13,0">
+                <Label Text="Set Notifications"/>
+                <Switch x:Name="notifictionSwitch"
+                        ThumbColor="Green"/>
+            </StackLayout>
             <Entry x:Name="instrunctorNameEntry" Placeholder="Instructor Name"/>
             <Entry x:Name="instrunctorPhoneEntry" Placeholder="Instructor Phone Number" Keyboard="Telephone"/>
             <Entry x:Name="instrunctorEmailEntry" Placeholder="Instructor Email" Keyboard="Email"/>

@@ -4,9 +4,24 @@
              x:Class="TermTracker.Views.EditAssessment">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="titleEntry"/>
+            <StackLayout>
+                <Label Text="Assesment Type"/>
+                <RadioButton x:Name="rbPerformance" Text="Performance" />
+                <RadioButton x:Name="rbObjective" Text="Objective" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="13,0">
+                <Label Text="End Date"/>
+                <DatePicker x:Name="EndDatePicker"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="13,0">
+                <Label Text="Set Notifications"/>
+                <Switch x:Name="notifictionSwitch"
+                        ThumbColor="Green"/>
+            </StackLayout>
+            <Button Text="Save"
+                    x:Name="BtnSave"
+                    Clicked="BtnSave_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

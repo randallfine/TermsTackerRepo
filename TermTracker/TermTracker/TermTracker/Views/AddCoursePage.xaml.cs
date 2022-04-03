@@ -1,10 +1,12 @@
-﻿using SQLite;
+﻿using Plugin.LocalNotifications;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TermTracker.Entities;
+using TermTracker.HelperClasses;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -27,6 +29,7 @@ namespace TermTracker
                 c.CourseTitle = courseTitleEntry.Text;
                 c.StartDate = StartDatePicker.Date.ToShortDateString();
                 c.EndDate = EndDatePicker.Date.ToShortDateString();
+                c.HasNotifications = notifictionSwitch.IsToggled;
                 c.Status = "Not Started";
                 c.TermId = TermId;
                 c.InstructorName = instrunctorNameEntry.Text;
@@ -39,6 +42,8 @@ namespace TermTracker
                 con.CreateTable<Course_DB>();
                 int rowsAdded = con.Insert(c);
             }
+            NotificationHelpers.AddCourseNotifications();
+
             Navigation.PopAsync();
         }
     }

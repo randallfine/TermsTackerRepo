@@ -14,6 +14,7 @@ namespace TermTracker.Entities
         public string CourseTitle { get; set; }
         public string StartDate { get; set; }
         public string EndDate { get; set; }
+        public bool HasNotifications { get; set; }
         public string Status { get; set; }
         public string InstructorName { get; set; }
         public string InstructorPhone { get; set; }

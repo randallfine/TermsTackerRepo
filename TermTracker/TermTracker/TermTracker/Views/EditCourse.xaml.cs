@@ -1,10 +1,12 @@
-﻿using SQLite;
+﻿using Plugin.LocalNotifications;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TermTracker.Entities;
+using TermTracker.HelperClasses;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -41,6 +43,7 @@ namespace TermTracker.Views
                     instrunctorEmailEntry.Text = courseRow.InstructorEmail;
                     instrunctorPhoneEntry.Text = courseRow.InstructorPhone;
                     notesEditor.Text = courseRow.Notes;
+                    notifictionSwitch.IsToggled = courseRow.HasNotifications;
                 }
             }
         }
@@ -54,6 +57,7 @@ namespace TermTracker.Views
                 c.CourseTitle = courseTitleEntry.Text;
                 c.StartDate = StartDatePicker.Date.ToShortDateString();
                 c.EndDate = EndDatePicker.Date.ToShortDateString();
+                c.HasNotifications = notifictionSwitch.IsToggled;
                 c.Status = statusPicker.SelectedItem.ToString();
                 c.InstructorName = instrunctorNameEntry.Text;
                 c.InstructorEmail = instrunctorEmailEntry.Text;
@@ -66,6 +70,18 @@ namespace TermTracker.Views
                 int rowsAdded = con.Update(c);
             }
             Navigation.PopAsync();
+        }
+
+        private void notifictionSwitch_Toggled(object sender, ToggledEventArgs e)
+        {
+            if(!notifictionSwitch.IsToggled)
+            {
+                NotificationHelpers.CancelCourseNotification(CourseId);
+            }
+            else
+            {
+                NotificationHelpers.AddCourseNotification(CourseId);
+            }
         }
     }
 }

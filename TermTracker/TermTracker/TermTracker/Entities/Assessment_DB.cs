@@ -14,6 +14,7 @@ namespace TermTracker.Entities
         public string AssessmentName { get; set; }
         public string AssessmentType { get; set; }
         public string EndDate { get; set; }
+        public bool HasNotifications { get; set; }
 
     }
 }

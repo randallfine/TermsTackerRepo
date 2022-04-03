@@ -12,8 +12,10 @@ namespace TermTracker.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditAssessment : ContentPage
     {
-        public EditAssessment()
+        private readonly int AssessmentId;
+        public EditAssessment(int id)
         {
+            AssessmentId = id;
             InitializeComponent();
         }
     }

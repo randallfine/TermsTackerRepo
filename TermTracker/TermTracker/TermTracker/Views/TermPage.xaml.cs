@@ -34,12 +34,12 @@ namespace TermTracker
                
                     if (termRow != null)
                     {
-                    termTitle.Text = termRow.Title;
-                    TermDetailStart.Text = termRow.StartDate;
-                    TermDetailEnd.Text = termRow.EndDate;
+                        termTitle.Text = termRow.Title;
+                        TermDetailStart.Text = termRow.StartDate;
+                        TermDetailEnd.Text = termRow.EndDate;
 
 
-                    var courses = con.Table<Course_DB>().Where(c => c.TermId.Equals(TermId)).ToList();
+                        var courses = con.Table<Course_DB>().Where(c => c.TermId.Equals(TermId)).ToList();
 
                         CourseListView.ItemsSource = courses;
                     } 

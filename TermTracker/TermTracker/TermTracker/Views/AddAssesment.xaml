@@ -5,18 +5,19 @@
     <ContentPage.Content>
         <StackLayout>
             <Entry x:Name="titleEntry" Placeholder="Assesment Title"/>
-            <Label Text="Assesment Type"/>
-            <Picker x:Name="statusPicker" Title="Status" SelectedIndex="0">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Performance</x:String>
-                        <x:String>Objective</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+            <StackLayout>
+                <Label Text="Assesment Type"/>
+                <RadioButton x:Name="rbPerformance" Text="Performance" />
+                <RadioButton x:Name="rbObjective" Text="Objective" />
+            </StackLayout>
             <StackLayout Orientation="Horizontal" Padding="13,0">
                 <Label Text="End Date"/>
                 <DatePicker x:Name="EndDatePicker"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="13,0">
+                <Label Text="Set Notifications"/>
+                <Switch x:Name="notifictionSwitch"
+                        ThumbColor="Green"/>
             </StackLayout>
             <Button Text="Save"
                     x:Name="BtnSave"

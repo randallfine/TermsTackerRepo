@@ -9,6 +9,7 @@ namespace TermTracker
         public static string FilePath;
         public App()
         {
+            Device.SetFlags(new[] { "RadioButton_Experimental" });
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
@@ -16,6 +17,7 @@ namespace TermTracker
 
         public App(string filePath)
         {
+            Device.SetFlags(new[] { "RadioButton_Experimental" });
             FilePath = filePath;    
             InitializeComponent();
 

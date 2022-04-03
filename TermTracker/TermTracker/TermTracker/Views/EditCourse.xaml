@@ -11,6 +11,12 @@
                 <Label Text="End Date"/>
                 <DatePicker x:Name="EndDatePicker"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="13,0">
+                <Label Text="Set Notifications"/>
+                <Switch x:Name="notifictionSwitch"
+                        ThumbColor="Green"
+                        Toggled="notifictionSwitch_Toggled"/>
+            </StackLayout>
             <Picker x:Name="statusPicker" Title="Status" SelectedIndex="0">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">

@@ -38,8 +38,7 @@ namespace TermTracker.Views
                 instrunctorEmailLabel.Text = courseRow.InstructorEmail;
                 instrunctorPhoneLabel.Text = courseRow.InstructorPhone;
                 notesLabel.Text = courseRow.Notes;
-                CrossLocalNotifications.Current.Show(courseRow.CourseTitle, $"This course will start on {courseRow.StartDate }", 101, DateTime.Parse(courseRow.StartDate));
-                CrossLocalNotifications.Current.Show(courseRow.CourseTitle, $"This course will end on {courseRow.EndDate }", 101, DateTime.Parse(courseRow.EndDate));
+            
 
                 var assesments = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(CourseId)).ToList();
 
