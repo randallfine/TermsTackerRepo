@@ -130,4 +130,57 @@ namespace TermTracker.HelperClasses
             CrossLocalNotifications.Current.Cancel(endId);
         }
     }
+
+    public static class SqlLiteHelpers
+    {
+        public static void DeleteTerm(int termId)
+        {
+            
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                con.CreateTable<Term_DB>();
+                con.CreateTable<Course_DB>();
+                con.CreateTable<Assessment_DB>();
+
+                var deleted = con.Delete<Term_DB>(termId);
+
+                if(deleted > 0)
+                {
+                    var courseRow = con.Table<Course_DB>().Where(c => c.TermId.Equals(termId)).ToList();
+
+                    courseRow.ForEach( c => DeleteCourse(c.CourseId));
+                }
+            }
+
+
+        }
+
+        public static void DeleteCourse(int courseId)
+        {
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                con.CreateTable<Course_DB>();
+                con.CreateTable<Assessment_DB>();
+                
+                var deleted = con.Delete<Course_DB>(courseId);
+
+                if (deleted > 0)
+                {
+                    var assessmentRow = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(courseId)).ToList();
+
+                    assessmentRow.ForEach(a => DeleteAssessment(a.AssessmentId));
+                }
+            }
+
+        }
+        public static void DeleteAssessment(int assessmentId)
+        {
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                con.CreateTable<Assessment_DB>();
+
+                var deleted = con.Delete<Assessment_DB>(assessmentId);
+            }
+        }
+    }
 }

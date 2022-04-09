@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TermTracker.Entities;
+using TermTracker.HelperClasses;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,7 +19,11 @@ namespace TermTracker.Views
         public CoursePage(int id)
         {
             CourseId = id;
+            
             InitializeComponent();
+
+            checkAssessements();
+            checkNotes();
         }
 
         protected override void OnAppearing()
@@ -42,6 +47,9 @@ namespace TermTracker.Views
 
                 var assesments = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(CourseId)).ToList();
 
+                if (assesments.Count == 2)
+                    BtnAddAssessment.IsEnabled = false;
+
                 AssesmentListView.ItemsSource = assesments;
             }
         }
@@ -62,16 +70,44 @@ namespace TermTracker.Views
             {
                 var row = con.Table<Course_DB>().Where(c => c.CourseId.Equals(CourseId)).FirstOrDefault();
                 {
-                    if (row != null)
-                    {
-                        var deleted = con.Delete<Course_DB>(CourseId);
-                    }
+                    SqlLiteHelpers.DeleteCourse(row.CourseId);
                 }
             }
             Navigation.PopAsync();
         }
 
         private void assesmentStackLayout_Tapped(object sender, EventArgs e)
+        {
+            var id = ((TappedEventArgs)e).Parameter;
+
+            Navigation.PushAsync(new AssessmentPage((int)id));
+        }
+
+        private void checkAssessements()
+        {
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                var assesments = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(CourseId)).ToList();
+
+                if (assesments.Count == 2)
+                    BtnAddAssessment.IsEnabled = false;
+            }
+        }
+
+        private void checkNotes()
+        {
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                var courseRow = con.Table<Course_DB>().Where(c => c.CourseId.Equals(CourseId)).FirstOrDefault();
+
+                if (courseRow.Notes.Trim().Equals(string.Empty))
+                {
+                    BtnSendNotes.IsEnabled = false;
+                }  
+            }
+        }
+
+        private void BtnSendNotes_Clicked(object sender, EventArgs e)
         {
 
         }

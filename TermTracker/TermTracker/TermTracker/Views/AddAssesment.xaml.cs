@@ -21,6 +21,30 @@ namespace TermTracker.Views
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+            {
+                con.CreateTable<Assessment_DB>();
+                var assessmentRow = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(CourseId)).FirstOrDefault();
+
+                string assessmentType = assessmentRow.AssessmentType;
+
+                if (assessmentType.Equals("Objective"))
+                {
+                    rbObjective.IsEnabled = false;
+                }
+                  
+                if(assessmentType.Equals("Performance"))
+                {
+                    rbPerformance.IsEnabled = false;
+                }
+            }
+
+        }
+
         private void BtnSave_Clicked(object sender, EventArgs e)
         {
             string assessmentType = string.Empty;

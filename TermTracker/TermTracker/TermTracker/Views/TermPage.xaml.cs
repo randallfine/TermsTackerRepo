@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TermTracker.Entities;
+using TermTracker.HelperClasses;
 using TermTracker.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -61,7 +62,7 @@ namespace TermTracker
                 {
                     if (row != null)
                     {
-                       var deleted = con.Delete<Term_DB>(TermId);
+                        SqlLiteHelpers.DeleteTerm(row.TermId);
                     }
                 }
             }

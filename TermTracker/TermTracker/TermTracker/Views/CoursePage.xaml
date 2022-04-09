@@ -22,32 +22,36 @@
                     <Label x:Name="StartDateLabel" HorizontalOptions="Center" TextColor="White"/>
                     <Label Text="-" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
                     <Label x:Name="EndDateLabel" HorizontalOptions="Center" TextColor="White"/>
-                </StackLayout> 
-                <Label x:Name="StausLabel"/>
-                <Label x:Name="instrunctorNameLabel" />
-                <Label x:Name="instrunctorPhoneLabel" />
-                <Label x:Name="instrunctorEmailLabel" />
-                <Label x:Name="notesLabel" HeightRequest="100"/>
+                </StackLayout>
+                
+                    <Label x:Name="StausLabel"/>
+                    <Label x:Name="instrunctorNameLabel" />
+                    <Label x:Name="instrunctorPhoneLabel" />
+                    <Label x:Name="instrunctorEmailLabel" />
+                    <Label x:Name="notesLabel" HeightRequest="100"/>
             </StackLayout>
-            <ListView Grid.Row="1" Grid.ColumnSpan="3" x:Name="AssesmentListView">
+ 
+            <ListView Grid.Row="1" Grid.ColumnSpan="3" x:Name="AssesmentListView" Margin="0,180,0,0" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell IsEnabled="True">
-                            <StackLayout x:Name="assesmentStackLayout" Orientation="Vertical">
-                                <Label Text="{Binding AssesmentName}" TextColor="Black" HorizontalOptions="Center"/>
-                                <Label Text="{Binding AssesmentType}" HorizontalOptions="Center"/>
+                            <StackLayout x:Name="assesmentStackLayout" Orientation="Vertical" BackgroundColor="#4986ad">
+                                <Label Text="{Binding AssessmentName}" TextColor="White" HorizontalOptions="Center"/>
+                                <Label Text="{Binding EndDate}" TextColor="White" HorizontalOptions="Center"/>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="assesmentStackLayout_Tapped"
-                                                      CommandParameter="{Binding AssesmentId}"/>
+                                                      CommandParameter="{Binding AssessmentId}"/>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+  
             <BoxView Grid.Row="3" Grid.ColumnSpan="3" BackgroundColor="#4986ad" VerticalOptions="EndAndExpand"/>
             <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
                 <Button x:Name="BtnAddAssessment" Text="Add Assessment" TextColor="White" BackgroundColor="Transparent" Clicked="BtnAddAssessment_Clicked"/>
+                <Button x:Name="BtnSendNotes" Text="Email Notes" TextColor="White" BackgroundColor="Transparent" Clicked="BtnSendNotes_Clicked"/>
                 <Button x:Name="BtnCourseTerm" Text="Edit Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnEditCourse_Clicked"/>
                 <Button x:Name="BtnDelete" Text="Drop Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnDelete_Clicked"/>
             </StackLayout>
