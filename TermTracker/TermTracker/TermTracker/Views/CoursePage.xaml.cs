@@ -22,8 +22,8 @@ namespace TermTracker.Views
             
             InitializeComponent();
 
-            checkAssessements();
-            checkNotes();
+            CheckAssessements();
+            CheckNotes();
         }
 
         protected override void OnAppearing()
@@ -76,6 +76,11 @@ namespace TermTracker.Views
             Navigation.PopAsync();
         }
 
+        private void BtnSendNotes_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EmailPage(CourseId));
+        }
+
         private void assesmentStackLayout_Tapped(object sender, EventArgs e)
         {
             var id = ((TappedEventArgs)e).Parameter;
@@ -83,7 +88,7 @@ namespace TermTracker.Views
             Navigation.PushAsync(new AssessmentPage((int)id));
         }
 
-        private void checkAssessements()
+        private void CheckAssessements()
         {
             using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
             {
@@ -94,7 +99,7 @@ namespace TermTracker.Views
             }
         }
 
-        private void checkNotes()
+        private void CheckNotes()
         {
             using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
             {
@@ -107,9 +112,6 @@ namespace TermTracker.Views
             }
         }
 
-        private void BtnSendNotes_Clicked(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
