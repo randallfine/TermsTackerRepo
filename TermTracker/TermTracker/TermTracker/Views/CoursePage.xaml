@@ -50,7 +50,7 @@
   
             <BoxView Grid.Row="3" Grid.ColumnSpan="3" BackgroundColor="#4986ad" VerticalOptions="EndAndExpand"/>
             <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-                <Button x:Name="BtnAddAssessment" Text="Add Assessment" TextColor="White" BackgroundColor="Transparent" Clicked="BtnAddAssessment_Clicked"/>
+                <Button x:Name="BtnAddAssessment" Text="Add Test" TextColor="White" BackgroundColor="Transparent" Clicked="BtnAddAssessment_Clicked"/>
                 <Button x:Name="BtnSendNotes" Text="Email Notes" TextColor="White" BackgroundColor="Transparent" Clicked="BtnSendNotes_Clicked"/>
                 <Button x:Name="BtnCourseTerm" Text="Edit Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnEditCourse_Clicked"/>
                 <Button x:Name="BtnDelete" Text="Drop Course" TextColor="White" BackgroundColor="Transparent" Clicked="BtnDelete_Clicked"/>
