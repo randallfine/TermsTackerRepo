@@ -18,8 +18,10 @@
             <BoxView Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="#4986ad"/>
             <StackLayout  Grid.Row="0" Grid.Column="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
                 <Label x:Name="assessmentLabel" TextColor="White" HorizontalOptions="Center" FontSize="Large"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label x:Name="assessmentTypeLabel" HorizontalOptions="Center" TextColor="White"/>
                 <Label x:Name="EndDateLabel" HorizontalOptions="Center" TextColor="White"/>
+                </StackLayout>
             </StackLayout>
 
             <BoxView Grid.Row="3" Grid.ColumnSpan="3" BackgroundColor="#4986ad" VerticalOptions="EndAndExpand"/>
