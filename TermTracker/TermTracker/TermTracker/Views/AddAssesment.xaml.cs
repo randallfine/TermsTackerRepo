@@ -29,18 +29,21 @@ namespace TermTracker.Views
             {
                 con.CreateTable<Assessment_DB>();
                 var assessmentRow = con.Table<Assessment_DB>().Where(a => a.CourseId.Equals(CourseId)).FirstOrDefault();
-
-                string assessmentType = assessmentRow.AssessmentType;
-
-                if (assessmentType.Equals("Objective"))
+                if(assessmentRow != null)
                 {
-                    rbObjective.IsEnabled = false;
+                    string assessmentType = assessmentRow.AssessmentType;
+
+                    if (assessmentType.Equals("Objective"))
+                    {
+                        rbObjective.IsEnabled = false;
+                    }
+
+                    if (assessmentType.Equals("Performance"))
+                    {
+                        rbPerformance.IsEnabled = false;
+                    }
                 }
-                  
-                if(assessmentType.Equals("Performance"))
-                {
-                    rbPerformance.IsEnabled = false;
-                }
+               
             }
 
         }

@@ -1,3 +1,13 @@
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\netstandard.dll
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.Android.dll
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.Android.pdb
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker.apk
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker.aab
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.aab
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.apk
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.apk.idsig
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.dll
+C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.pdb
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\build.props
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\adb.props
@@ -20,15 +30,6 @@ C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\R.txt
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\R.cs.flag
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\TermTracker.Android.csproj.CoreCompileInputs.cache
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.Android.dll
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.Android.pdb
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker.apk
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker.aab
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.aab
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.apk
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\com.companyname.termtracker-Signed.apk.idsig
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.dll
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\bin\Debug\TermTracker.pdb
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\XamlC.stamp
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\TermTracker.Android.csproj.CopyComplete
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\TermTracker.Android.dll
@@ -62,7 +63,6 @@ C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\Mono.Security.pdb
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\mscorlib.pdb
-C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\netstandard.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.Abstractions.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.dll
 C:\Users\randa\source\repos\TermsTackerRepo\TermTracker\TermTracker\TermTracker.Android\obj\Debug\90\android\assets\Plugin.LocalNotifications.dll.mdb

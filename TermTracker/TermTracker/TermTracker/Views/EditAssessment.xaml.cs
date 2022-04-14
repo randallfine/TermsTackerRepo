@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TermTracker.Entities;
+using TermTracker.HelperClasses;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -67,7 +68,36 @@ namespace TermTracker.Views
 
         private void BtnSave_Clicked(object sender, EventArgs e)
         {
+            string assessmentType = string.Empty;
+            if (rbObjective.IsChecked)
+            {
+                assessmentType = "Objective";
+            }
+            if (rbPerformance.IsChecked)
+            {
+                assessmentType = "Performance";
+            }
+            Assessment_DB a = new Assessment_DB();
+            {
+                if(titleEntry.Text != null)
+                {
+                    a.AssessmentId = AssessmentId;
+                    a.AssessmentName = titleEntry.Text;
+                    a.EndDate = EndDatePicker.Date.ToShortDateString();
+                    a.AssessmentType = assessmentType;
+                    a.CourseId = CourseId;
+                    a.HasNotifications = notifictionSwitch.IsToggled;
 
+                };
+                using (SQLiteConnection con = new SQLiteConnection(App.FilePath))
+                {
+                    con.CreateTable<Assessment_DB>();
+                    int rowsAdded = con.Update(a);
+                }
+                NotificationHelpers.AddAssessmentNotifications();
+                Navigation.PopAsync();
+            }
+                
         }
     }
 }

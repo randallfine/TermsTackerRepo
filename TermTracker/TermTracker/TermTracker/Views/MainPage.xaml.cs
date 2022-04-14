@@ -17,7 +17,7 @@ namespace TermTracker
         public MainPage()
         {
             InitializeComponent();
-            CheckData();
+        
         }
 
         public void AddTermToolBarItem_Clicked(object sender, EventArgs e)
@@ -27,7 +27,10 @@ namespace TermTracker
 
         protected override void OnAppearing()
         {
+
             base.OnAppearing();
+
+            CheckData();
 
             NotificationHelpers.AddAllNotifications();
 
@@ -121,9 +124,9 @@ namespace TermTracker
                 TermId = termId,
                 HasNotifications= true,
                 Status = "Not Started",
-                InstructorName =  "Jenny Doe",
-                InstructorPhone = "867-5309",
-                InstructorEmail = "jennydoe@testemail.com",
+                InstructorName =  "Randall Fine",
+                InstructorPhone = "573-797-0249",
+                InstructorEmail = "rfine4@wgu.edu",
                 Notes = "Some random notes about some random class"
     };
 

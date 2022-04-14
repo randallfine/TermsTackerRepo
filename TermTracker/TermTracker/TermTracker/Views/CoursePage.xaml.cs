@@ -22,8 +22,7 @@ namespace TermTracker.Views
             
             InitializeComponent();
 
-            CheckAssessements();
-            CheckNotes();
+           
         }
 
         protected override void OnAppearing()
@@ -52,6 +51,9 @@ namespace TermTracker.Views
 
                 AssesmentListView.ItemsSource = assesments;
             }
+
+            CheckAssessements();
+            CheckNotes();
         }
 
         private void BtnAddAssessment_Clicked(object sender, EventArgs e)
@@ -105,7 +107,7 @@ namespace TermTracker.Views
             {
                 var courseRow = con.Table<Course_DB>().Where(c => c.CourseId.Equals(CourseId)).FirstOrDefault();
 
-                if (courseRow.Notes.Trim().Equals(string.Empty))
+                if (courseRow.Notes == null || courseRow.Notes.Trim().Equals(string.Empty))
                 {
                     BtnSendNotes.IsEnabled = false;
                 }  

@@ -20,7 +20,6 @@ namespace TermTracker
         {
             TermId = id;
             InitializeComponent();
-            CheckMaxCourses();
         }
 
         protected override void OnAppearing()
@@ -45,6 +44,8 @@ namespace TermTracker
                         CourseListView.ItemsSource = courses;
                     } 
             }
+
+            CheckMaxCourses();
         }
 
         private void courseStackLayout_Tapped(object sender, EventArgs e)
