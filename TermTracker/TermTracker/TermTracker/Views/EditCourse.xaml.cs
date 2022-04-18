@@ -113,5 +113,10 @@ namespace TermTracker.Views
                 endDatePicker.Date = StartDatePicker.Date;
             }
         }
+
+        private void StartDatePicker_DateSelected_1(object sender, DateChangedEventArgs e)
+        {
+
+        }
     }
 }
