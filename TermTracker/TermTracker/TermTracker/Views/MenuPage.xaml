@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TermTracker.Views.MenuPage"
+            Title="WGU Term Tracker" NavigationPage.HasNavigationBar="True">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text=""
+                 
+                 Order="Primary"
+                 Priority="0" />
+
+    </ContentPage.ToolbarItems>
+
+
+    <StackLayout Orientation="Vertical" Grid.Row="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <Button x:Name="BtnViewTerms" Text="View Terms" TextColor="White" BackgroundColor="Blue" Clicked="BtnViewTerms_Clicked"/>
+        <Button x:Name="BtnSearchCourses" Text="Search Courses" TextColor="White" BackgroundColor="Blue" Clicked="BtnSearchCourses_Clicked"/>
+        <Button x:Name="BtnViewReports" Text="View Reports" TextColor="White" BackgroundColor="Blue" Clicked="BtnViewReports_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SelectedDevice>Motorola moto g power %282021%29</SelectedDevice>
-    <ActiveDebugProfile>Motorola moto g power %282021%29</ActiveDebugProfile>
+    <ActiveDebugProfile>Motorola moto g power %282021%29 %28Android 10.0 - API 29%29</ActiveDebugProfile>
     <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <ProjectView>ProjectFiles</ProjectView>

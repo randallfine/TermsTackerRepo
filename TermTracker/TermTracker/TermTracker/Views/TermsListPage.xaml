@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TermTracker.Views.TermsListPage"
+             Title="WGU Term Tracker" NavigationPage.HasNavigationBar="True">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Term"
+                 x:Name="AddTermToolBarItem"
+                 Clicked="AddTermToolBarItem_Clicked"    
+                 Order="Primary"
+                 Priority="0" />
+
+    </ContentPage.ToolbarItems>
+
+
+
+    <StackLayout Orientation="Vertical" 
+                 Margin="0,20">
+        <ListView x:Name="termListView" 
+                  HasUnevenRows="True" 
+                  SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" Margin="0,0,0,20" Orientation="Horizontal" BackgroundColor="#4986ad" HorizontalOptions="Center" Padding="60,20,60,20">
+                                    <Label Text="{Binding Title}" x:Name="TermNameLabel"  VerticalOptions="Center" TextColor="White" FontSize="Large" Margin="0,0,25,0"/>
+                                    <Label Text="{Binding StartDate}" x:Name="TermStartDateLabel" TextColor="White" VerticalOptions="Center" />
+                                    <Label Text="-" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" />
+                                    <Label Text="{Binding EndDate}" x:Name="TermEndDateLabel"  TextColor="White" VerticalOptions="Center"/>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TermStackLayout_Tapped"
+                                                      CommandParameter="{Binding TermId}"/>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

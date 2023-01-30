@@ -8,10 +8,14 @@
           "SQLitePCLRaw.bundle_green": "2.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/SQLite-net.dll": {}
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/SQLite-net.dll": {}
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_green/2.0.3": {
@@ -67,10 +71,14 @@
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Buffers.dll": {}
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.3": {
@@ -80,19 +88,27 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xam.Plugins.Notifier/3.0.1": {
@@ -101,12 +117,20 @@
           "Xamarin.Android.Support.v4": "23.0.1.3"
         },
         "compile": {
-          "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/MonoAndroid10/Plugin.LocalNotifications.dll": {}
+          "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/MonoAndroid10/Plugin.LocalNotifications.dll": {
+            "related": ".Abstractions.xml;.dll.mdb;.pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/MonoAndroid10/Plugin.LocalNotifications.dll": {}
+          "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/MonoAndroid10/Plugin.LocalNotifications.dll": {
+            "related": ".Abstractions.xml;.dll.mdb;.pdb;.XML"
+          }
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -857,10 +881,14 @@
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3"
         },
         "compile": {
-          "lib/monoandroid90/Xamarin.Essentials.dll": {}
+          "lib/monoandroid90/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/monoandroid90/Xamarin.Essentials.dll": {}
+          "lib/monoandroid90/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Forms/4.7.0.1142": {
@@ -873,18 +901,38 @@
           "Xamarin.Android.Support.v7.CardView": "28.0.0.3"
         },
         "compile": {
-          "lib/MonoAndroid90/FormsViewGroup.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Core.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Platform.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll": {}
+          "lib/MonoAndroid90/FormsViewGroup.dll": {
+            "related": ".pdb"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll": {
+            "related": ".pdb"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Platform.dll": {
+            "related": ".Android.pdb"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/MonoAndroid90/FormsViewGroup.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Core.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Platform.dll": {},
-          "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll": {}
+          "lib/MonoAndroid90/FormsViewGroup.dll": {
+            "related": ".pdb"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll": {
+            "related": ".pdb"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Platform.dll": {
+            "related": ".Android.pdb"
+          },
+          "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},

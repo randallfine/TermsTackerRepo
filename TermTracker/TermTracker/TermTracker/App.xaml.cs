@@ -1,4 +1,5 @@
 ﻿using System;
+using TermTracker.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,14 +7,15 @@ namespace TermTracker
 {
     public partial class App : Application
     {
-        public static string FilePath;
-        public App()
-        {
-            Device.SetFlags(new[] { "RadioButton_Experimental" });
-            InitializeComponent();
+        public static string FilePath { get; set; }
+        public static bool IsUserLoggedIn { get; set; }
+        //public App()
+        //{
+        //    Device.SetFlags(new[] { "RadioButton_Experimental" });
+        //    InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
-        }
+        //    MainPage = new NavigationPage(new LoginPage());
+        //}
 
         public App(string filePath)
         {
@@ -21,7 +23,14 @@ namespace TermTracker
             FilePath = filePath;    
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            if (!IsUserLoggedIn)
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MenuPage());
+            }
         }
 
         protected override void OnStart()

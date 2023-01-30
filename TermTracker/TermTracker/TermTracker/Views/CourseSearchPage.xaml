@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TermTracker.Views.CourseSearchPage"
+             Title="WGU Term Tracker" NavigationPage.HasNavigationBar="True">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text=""
+
+                 Order="Primary"
+                 Priority="0" />
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Search By Course Title" />
+            <Entry x:Name="courseTitleEntry" Placeholder="Course Title" />
+            <Button Text="Search" Clicked="Button_Clicked"/>
+            <Label x:Name="messageLabel" />
+            <StackLayout Orientation="Vertical" 
+                 Margin="0,20">
+                <ListView x:Name="courseListView" 
+                  HasUnevenRows="True" 
+                  SeparatorVisibility="None">
+                    <ListView.Header  BackgroundColor="#ffa63c95">
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Class Name" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0"  />
+                            <Label Text="Start Date" FontAttributes="Bold"  HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" />
+                            <Label Text="End Date" FontAttributes="Bold"  HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2"/>
+                            <Label Text="Status" FontAttributes="Bold"  HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="3"/>
+                        </Grid>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Center">
+                                            <Label Text="{Binding CourseTitle}"   VerticalOptions="Center" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="1" Margin="0,0,0,0" Orientation="Horizontal"  HorizontalOptions="Center">
+                                            <Label Text="{Binding StartDate}" VerticalOptions="Center" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="2" Margin="0,0,0,0" Orientation="Horizontal"  HorizontalOptions="Center">
+                                            <Label Text="{Binding EndDate}"  VerticalOptions="Center" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="3" Margin="0,0,0,0" Orientation="Horizontal"  HorizontalOptions="Center">
+                                            <Label Text="{Binding Status}"  VerticalOptions="Center" />
+                                        </StackLayout>
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
